@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Asthma Safety Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+  <h1>Asthma Safety</h1>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/predict">Predict</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+  <div class="form-container">
+  <h2>Predict Environment Safety</h2>
+
+  <form action="/predict" method="POST">
+    
+    <label>Temperature (°C)</label>
+    <input type="number" name="temperature" required>
+
+    <label>Humidity (%)</label>
+    <input type="number" name="humidity" required>
+
+    <label>Air Quality Index (AQI)</label>
+    <input type="number" name="aqi" required>
+
+    <label>Pollution (μg/m³)</label>
+    <input type="number" name="pollution" required>
+
+    <button type="submit">Predict</button>
+    
+  </form>
+
+<form action="/predict" method="POST">
+  <input type="number" name="temperature">
+  <input type="number" name="humidity">
+  <input type="number" name="aqi">
+  <input type="number" name="pollution">
+  <button type="submit">Predict</button>
+  </div>
+    {% if prediction_text %}
+      <h3>{{ prediction_text }}</h3>
+    {% endif %}
+  </div>
+  {% if prediction_text %}
+    <h3 style="margin-top:20px; color:yellow;">
+        {{ prediction_text }}
+    </h3>
+{% endif %}
+</form>
+</body>
+</html>

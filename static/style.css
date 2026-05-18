@@ -1,0 +1,141 @@
+nav {
+  width: 100%;
+  padding: 15px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #27ae60;
+}
+.page-container {
+  max-width: 1000px;
+  margin: 120px auto;
+  padding: 40px;
+  text-align: center;
+}
+.form-container {
+  max-width: 500px;
+  margin: 120px auto;
+  padding: 40px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 17px;
+}
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  color: white;
+}
+.hero {
+  background-image: url('/static/image/astma.png'); /* 👈 path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.form-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;   /* IMPORTANT */
+  gap: 15px;                /* space between elements */
+}
+
+form {
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px;
+  background: #27ae60;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1f9a55;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #1f9a55;
+}
+.center-section {
+  height: 100vh;              /* full screen height */
+  display: flex;
+  justify-content: center;    /* horizontal center */
+  align-items: center;        /* vertical center */
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 15px;
+}
